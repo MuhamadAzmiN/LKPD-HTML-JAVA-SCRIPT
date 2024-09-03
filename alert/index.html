@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="btn">Munculkan Alert </button>
+    <h1 id="text"></h1>
+    <script>
+        document.getElementById('btn').addEventListener('click', function(){
+            const textElement = document.getElementById('text');
+            let secondsLeft = 6
+            textElement.innerHTML = `Danger ini akan tertutup ${secondsLeft} detik`;
+            const intervalId = setInterval(function() {
+                secondsLeft--;
+                // alert(`${secondsLeft}`)
+                textElement.innerHTML = `Danger ini akan tertutup ${secondsLeft} detik`;
+
+                if (secondsLeft <= 0) {
+                    clearInterval(intervalId);
+                    textElement.innerHTML = '';
+                }
+            }, 1000); 
+        });
+      
+
+    </script>
+</body>
+</html>

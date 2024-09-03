@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+
+        <input type="text" id="cari" placeholder="seacrh">
+        <button id="btn" type="button">klikk</button>
+        <p id="text"></p>
+    </form>
+
+    <script>
+        const seacrh = document.getElementById('cari')
+        const button = document.getElementById('btn')
+        const text = document.getElementById('text')
+        
+        button.addEventListener('click', function(){
+            text.innerHTML = `Sedang Mencari data ${seacrh.value}`
+            let setHtml = setTimeout(() => {
+                text.innerHTML = ` Data Ketemu nih  ${seacrh.value}`
+                
+            }, 5000);
+        })
+
+        
+    </script>
+</body>
+</html>

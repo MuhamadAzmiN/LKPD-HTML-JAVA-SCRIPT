@@ -1,0 +1,226 @@
+/* Basic reset */
+body, margin, padding {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Apply the new fonts */
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  a {
+    font-size: 14px;
+  }
+  
+  .logo {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .nav-links a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    font-weight: bold;
+    
+  }
+
+  .nav-links button {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    /* color: rgb(255, 255, 255); */
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 2rem;
+    
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  
+  .nav-links a:hover {
+    color: gray;
+  }
+
+
+  .btn-daftar {
+    background-color: #007cff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+  }
+
+  .btn-masuk {
+    border: none;
+    background-color: #f9f9f9;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+
+  .img-background {
+    background: rgba(54, 54, 54, 0.5);
+  }
+
+
+  .background-image {
+    position: relative;
+    width: 100%;
+    height: auto; /* Atur tinggi sesuai kebutuhan */
+  }
+  
+  .img-background {
+    width: 100%;
+    height: auto;
+    display: block; 
+    filter: brightness(50%); /* Mengurangi kecerahan gambar */
+  }
+  
+  h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Warna teks agar kontras dengan gambar */
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    font-size: 100px;
+    letter-spacing: 0px;
+  }
+
+
+  .text {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Warna teks agar kontras dengan gambar */
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    font-size: 20px;
+    
+  }
+
+  .button-menu {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Warna teks agar kontras dengan gambar */
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    font-size: 20px;
+    margin-top: 120px;
+    
+  }
+
+ 
+  /* dropdowns */
+
+  /* Style The Dropdown Button */
+.dropbtn {
+    background-color: #f9f9f9;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  /* modal  */
+
+  .modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+
+
+
+  
+  
+  
+  
+  /* Content styles */
+
+  
+  
+  

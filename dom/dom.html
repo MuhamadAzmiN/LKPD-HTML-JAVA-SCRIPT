@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Form</title>
+</head>
+<body>
+
+    
+    <button id="btn">Tambah Form</button>
+    <p>opsi jawaban & poin</p>
+    <div id="form_container">
+        <label for="poin">opsi 1</label>
+                <input type="text" id="poin" placeholder="poin">
+                <input type="text" placeholder="deskripsi" >
+        <br>
+    </div>
+
+    <script>
+        let formCounter = 1;
+
+        document.getElementById('btn').addEventListener('click', function() {
+            formCounter++; 
+
+           
+            document.getElementById('form_container').innerHTML += `
+        
+                <label for="poin">opsi ${formCounter}</label>
+                <input type="text" id="poin" placeholder="poin">
+                <input type="text" placeholder="deskripsi" >
+                <br>
+            `;
+
+
+            
+
+
+            
+        });
+    </script>
+</body>
+</html>
